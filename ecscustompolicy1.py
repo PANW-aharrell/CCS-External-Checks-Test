@@ -19,9 +19,9 @@ class MyCustomPolicy(BaseResourceCheck):
         i=1
 
         if i in list:
-            return CheckResult.PASSED
-        else:
             return CheckResult.FAILED
+        else:
+            return CheckResult.PASSED
         #return CheckResult.PASSED if conf['name'][0] == 'xyz' else CheckResult.FAILED
 
 
